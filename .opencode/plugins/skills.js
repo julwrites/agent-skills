@@ -1,0 +1,12 @@
+module.exports = {
+  name: "agent-skills-collection",
+  version: "1.0.0",
+  description: "A collection of powerful skills for AI agents.",
+  skills: [
+    "../../skills/using-skills/SKILL.md",
+    "../../skills/git-codebase-health-report/SKILL.md"
+  ],
+  init: function(context) {
+    context.loadSkills(this.skills);
+  }
+};
